@@ -11,6 +11,7 @@ exports.handler = function (event, context, callback) {
 		}).promise());
 	}
 	Promise.all(ps).then(data=>{
+		
 		callback(null, JSON.stringify(i));
 	})
 }
